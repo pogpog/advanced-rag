@@ -1,8 +1,10 @@
-# Blitz 2026 - GraphRAG
+# Advanced RAG EXamples
+
+## Agentic Knowledge Graph RAG
 
 Agentic RAG pipeline combining Knowledge Graph (Neo4j) with vector search, orchestrated by LangGraph.
 
-## Setup
+### Setup
 
 ```bash
 # Install all dependencies (creates .venv automatically)
@@ -20,7 +22,7 @@ uv remove <package-name>
 
 Packages are tracked in `pyproject.toml` — no `requirements.txt` needed.
 
-## Requirements
+### Requirements
 
 - **AWS credentials** with access to Amazon Bedrock (used for Nova models and embeddings)
   - `us.amazon.nova-pro-v1:0` — graph entity extraction
@@ -40,7 +42,7 @@ NEO4J_USERNAME=neo4j
 NEO4J_PASSWORD=your-password
 ```
 
-## Running the Notebook
+### Running the Notebook
 
 1. Start Neo4j (see notebook section 3)
 2. Copy `.env.example` to `.env` and fill in your keys
